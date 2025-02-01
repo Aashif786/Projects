@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link href rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="">
+        </div>
+        
+    </div>
+
+    <!-- single product details -->
+     <div class="small-container singleproduct">
+        <div class="row">
+            <div class="col-2">
+                 <img src="images/gallery-1.jpg" width="100%" id="productimg">
+
+                 <div class="smallrow">
+                    <div class="smallcol">
+                        <img src="images/gallery-1.jpg" width="100%" class="smallimg">
+                    </div>
+                    <div class="smallcol">
+                        <img src="images/gallery-2.jpg" width="100%" class="smallimg">
+                    </div>
+                    <div class="smallcol">
+                        <img src="images/gallery-3.jpg" width="100%" class="smallimg">
+                    </div>
+                    <div class="smallcol">
+                        <img src="images/gallery-4.jpg" width="100%" class="smallimg">
+                    </div>
+                    
+                 </div>
+            </div>
+            <div class="col-2">
+                <p>Home / T-Shirt</p>
+                <h1>Red Printed Tshirt by HRX</h1>
+                <h4>$50.00</h4>
+                <select >
+                    <option >Select size</option>
+                    <option >S</option>
+                    <option >M</option>
+                    <option >L</option>
+                    <option >XL</option>
+                </select>
+                <input type="number" value=1>
+                <a href="" class="btn">Add to Cart</a>
+                <h3>Product details </i>
+                </h3>
+                <p>Elevate your casual wardrobe with this vibrant Red Printed T-shirt by HRX, designed for comfort and style. Made from premium quality fabric, this T-shirt offers a soft, breathable feel, perfect for all-day wear. </p>
+            </div>
+        </div>
+     </div>
+
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related products</h2>
+            <p>view more</p>
+        </div>
+    </div>
+    <div class="small-container">
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg" >
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> $50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" >
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p> $30.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" >
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p> $50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" >
+                <h4>Red Printed Tshirt</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p> 50.00</p>
+            </div>
+            
+        </div>
+
+        <div>
+
+
+        </div>
+        <script>
+            var productimg =document.getElementById("productimg")
+            var smallimg=document.getElementsByClassName("smallimg")
+            smallimg[0].onclick=function(){
+                productimg.src=smallimg[0].src
+            }
+            smallimg[1].onclick=function(){
+                productimg.src=smallimg[1].src
+            }
+            smallimg[2].onclick=function(){
+                productimg.src=smallimg[2].src
+            }
+            smallimg[3].onclick=function(){
+                productimg.src=smallimg[3].src
+            }
+        </script>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Download Our App</h3>
+            <p>Download App for Android <br>.</p>
+            <div class="app-buttons">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <img class="logo" src="images/logo-white.png " alt="Logo">
+            <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="#">Blog Post</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Join Affiliate</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow us</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login/register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px" alt="">
+        </div>
+    </div>
+    
+    <div class="accountpage">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/image1.png" alt="">    
+                </div>
+                <div class="col-2">
+                    <div class="formcontainer">
+                        <div class="formbtn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="indicator">
+                        </div>
+                        <form id="loginform">
+                            <input type="text" placeholder="Username"><br><br>
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password?</a>
+                        </form>
+                        <form id="registerform">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var loginform = document.getElementById("loginform");
+        var registerform = document.getElementById("registerform");
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            registerform.style.transform = "translateX(0px)";
+            loginform.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)"; // Move indicator under Register
+        }
+
+        function login() {
+            registerform.style.transform = "translateX(300px)";
+            loginform.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)"; // Move indicator back under Login
+        }
+    </script>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Download Our App</h3>
+            <p>Download App for Android <br>.</p>
+            <div class="app-buttons">
+                <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <img class="logo" src="images/logo-white.png " alt="Logo">
+            <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="#">Blog Post</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Join Affiliate</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow us</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">YouTube</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
